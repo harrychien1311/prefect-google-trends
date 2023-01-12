@@ -19,8 +19,8 @@ Use the ```prefect cloud login`` command to log into Prefect Cloud from the loca
 prefect cloud login --key xxx_xxxxxxxxx
 ```
 ## Executing
--Create a Docker block named google-trends for executing the flow run on the Docker environment
--In the local environment:
+- Create a Docker block named google-trends for executing the flow run on the Docker environment
+- In the local environment:
 ```bash
 # Building a deployment for a flow executed on the docker environment:
 prefect deployment build src/main.py:create_pytrends_report -n google-trends -ib docker-container/google-trends -o prefect-docker-deployment -q test
